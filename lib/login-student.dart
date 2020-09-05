@@ -95,6 +95,13 @@ class _LoginstudentState extends State<Loginstudent> {
               top: 240,
               left: 79,
               child: Container(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    icon: Icon(Icons.person),
+                    hintText: 'School Code',
+                    labelText: 'School Code',
+                  ),
+                ),
                 width: 253,
                 height: 46,
                 decoration: BoxDecoration(
@@ -118,6 +125,13 @@ class _LoginstudentState extends State<Loginstudent> {
               top: 350,
               left: 79,
               child: Container(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    // icon: Icon(Icons.bo),
+                    hintText: 'Regis/enroll no',
+                    labelText: 'Regis/enroll no',
+                  ),
+                ),
                 width: 253,
                 height: 46,
                 decoration: BoxDecoration(
@@ -170,41 +184,16 @@ class _LoginstudentState extends State<Loginstudent> {
               ),
             ),
             Positioned(
-              top: 250,
-              left: 125,
-              child: Text(
-                'School Code',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Color.fromRGBO(0, 0, 0, 1),
-                    fontFamily: 'Muli',
-                    fontSize: 24,
-                    letterSpacing:
-                        0 /*percentages not used in flutter. defaulting to zero*/,
-                    fontWeight: FontWeight.normal,
-                    height: 1),
-              ),
-            ),
-            Positioned(
-              top: 360,
-              left: 100,
-              child: Text(
-                'Regis/Enroll. No.',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Color.fromRGBO(0, 0, 0, 1),
-                    fontFamily: 'Muli',
-                    fontSize: 24,
-                    letterSpacing:
-                        0 /*percentages not used in flutter. defaulting to zero*/,
-                    fontWeight: FontWeight.normal,
-                    height: 1),
-              ),
-            ),
-            Positioned(
               top: 470,
               left: 79,
               child: Container(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    // icon: Icon(Icons.bo),
+                    hintText: 'Class',
+                    labelText: 'Class',
+                  ),
+                ),
                 width: 253,
                 height: 46,
                 decoration: BoxDecoration(
@@ -222,22 +211,6 @@ class _LoginstudentState extends State<Loginstudent> {
                   ],
                   color: Color.fromRGBO(119, 187, 178, 1),
                 ),
-              ),
-            ),
-            Positioned(
-              top: 480,
-              left: 167,
-              child: Text(
-                'Class',
-                textAlign: TextAlign.left,
-                style: TextStyle(
-                    color: Color.fromRGBO(0, 0, 0, 1),
-                    fontFamily: 'Muli',
-                    fontSize: 24,
-                    letterSpacing:
-                        0 /*percentages not used in flutter. defaulting to zero*/,
-                    fontWeight: FontWeight.normal,
-                    height: 1),
               ),
             ),
           ],

@@ -1,18 +1,19 @@
-import 'package:begin/self-study.dart';
-import 'package:begin/subject.dart';
+import 'package:begin/stud-classroom.dart';
 import 'package:flutter/material.dart';
-import 'package:swipedetector/swipedetector.dart';
-import 'subject.dart';
-// import 'dart:math' as math;
+import 'dart:math' as math;
 
-class Studclassroom extends StatefulWidget {
+import 'package:swipedetector/swipedetector.dart';
+
+class Selfstudy extends StatefulWidget {
   @override
-  _StudclassroomState createState() => _StudclassroomState();
+  _SelfstudyState createState() => _SelfstudyState();
 }
 
-class _StudclassroomState extends State<Studclassroom> {
+class _SelfstudyState extends State<Selfstudy> {
   @override
   Widget build(BuildContext context) {
+    // Figma Flutter Generator HomestudentselfstudyWidget - FRAME
+
     return Scaffold(
         body: Container(
             width: 460,
@@ -39,40 +40,6 @@ class _StudclassroomState extends State<Studclassroom> {
                             fit: BoxFit.fitWidth),
                       ))),
               Positioned(
-                top: 180,
-                left: 38,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(new MaterialPageRoute(
-                        builder: (BuildContext context) => new Subjectpage()));
-                  },
-                  child: SwipeDetector(
-                      onSwipeLeft: () {
-                        Navigator.of(context).push(new MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                new Selfstudy()));
-                      },
-                      child: Container(
-                          width: 336,
-                          height: 540,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(10),
-                              topRight: Radius.circular(10),
-                              bottomLeft: Radius.circular(10),
-                              bottomRight: Radius.circular(10),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Color.fromRGBO(0, 0, 0, 0.25),
-                                  offset: Offset(0, 4),
-                                  blurRadius: 4),
-                            ],
-                            color: Color.fromRGBO(245, 173, 137, 1),
-                          ))),
-                ),
-              ),
-              Positioned(
                   top: 71,
                   left: 78,
                   child: Text(
@@ -95,33 +62,59 @@ class _StudclassroomState extends State<Studclassroom> {
                         height: 1),
                   )),
               Positioned(
-                top: 206,
-                left: 104,
-                child: Text(
-                  'Classroom',
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                      shadows: <Shadow>[
-                        Shadow(
-                          blurRadius: 15.0,
-                          color: Colors.black,
-                          offset: Offset(5.0, 5.0),
-                        ),
-                      ],
-                      color: Color.fromRGBO(255, 255, 255, 1),
-                      fontFamily: 'Muli',
-                      fontSize: 38,
-                      letterSpacing:
-                          0 /*percentages not used in flutter. defaulting to zero*/,
-                      fontWeight: FontWeight.normal,
-                      height: 1),
-                ),
-              ),
+                  top: 180,
+                  left: 38,
+                  child: SwipeDetector(
+                      onSwipeRight: () {
+                        Navigator.of(context).push(new MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                new Studclassroom()));
+                      },
+                      child: Container(
+                          width: 336,
+                          height: 540,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Color.fromRGBO(0, 0, 0, 0.25),
+                                  offset: Offset(0, 4),
+                                  blurRadius: 4)
+                            ],
+                            color: Color.fromRGBO(245, 173, 137, 1),
+                          )))),
               Positioned(
-                top: 80,
-                left: -50,
+                  top: 206,
+                  left: 104,
+                  child: Text(
+                    'Self Study',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        shadows: <Shadow>[
+                          Shadow(
+                            blurRadius: 15.0,
+                            color: Colors.black,
+                            offset: Offset(5.0, 5.0),
+                          ),
+                        ],
+                        color: Color.fromRGBO(255, 255, 255, 1),
+                        fontFamily: 'Muli',
+                        fontSize: 38,
+                        letterSpacing:
+                            0 /*percentages not used in flutter. defaulting to zero*/,
+                        fontWeight: FontWeight.normal,
+                        height: 1),
+                  )),
+              Positioned(
+                top: 120,
+                left: 32,
                 child: Container(
-                  width: 400,
+                  width: 360,
                   height: 600,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
@@ -131,11 +124,27 @@ class _StudclassroomState extends State<Studclassroom> {
                       bottomRight: Radius.circular(100),
                     ),
                     image: DecorationImage(
-                        image: AssetImage('assets/class.png'),
+                        image: AssetImage('assets/Exams-pana.png'),
                         fit: BoxFit.fitWidth),
                   ),
                 ),
-              )
+              ),
+              Positioned(
+                  top: 12,
+                  left: 315,
+                  child: Container(
+                    width: 35,
+                    height: 35,
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color.fromRGBO(0, 0, 0, 0.25),
+                            offset: Offset(0, 4),
+                            blurRadius: 4)
+                      ],
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  )),
             ])));
   }
 }
