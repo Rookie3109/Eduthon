@@ -1,5 +1,18 @@
 # Eduthon
-A repository for the eduthon hackathon
+The app we present is a set of integrated tools which can solve the problems of teachers, students, parents and everyone involved in E-learning.
+
+
+## How to setup:
+
+Clone the repository, setup vscode/android studio for flutter, execute
+```flutter run```
+and voila!
+
+Reference for setting up your IDE can be found [here](https://medium.com/techspace-usict/set-up-flutter-for-windows-in-vscode-e7e26d01f6f0) and refer to official docs [here](https://flutter.dev/docs/get-started/editor?tab=vscode)
+
+Keep in mind that the __*USB debugging*__ of your mobile device must be on, if you are using a physical device. 
+
+Learn how to navigate through the app : [Prototype]()
 
 ## Problem Statement
 Colleges, Schools, Tuitions and Coaching centers have been
@@ -27,6 +40,12 @@ __Solution__ : Our app gives students the best study routine : Pomodoro study te
 
 **Solution** : Random questions will be given to random students at the end of the lecture, so that the attendance is marked and it also forced students to pay attention in class.
 
+## Tech Stack
+1. Flutter
+2. Dart
+3. Figma
+
+
 ## Unique Selling Points
 <item> 1. Personalized learning experience for students by providing different media based education. 
   
@@ -36,22 +55,8 @@ __Solution__ : Our app gives students the best study routine : Pomodoro study te
   
 <item> 4. Potent attendance management system specially designed for remote learning.
 
-## Tech Stack
-1. Flutter
-2. Dart
-3. Figma
 
-## How to setup:
 
-Clone the repository, setup vscode/android studio for flutter, execute
-```flutter run```
-and voila!
-
-Reference for setting up your IDE can be found [here](https://medium.com/techspace-usict/set-up-flutter-for-windows-in-vscode-e7e26d01f6f0) and refer to official docs [here](https://flutter.dev/docs/get-started/editor?tab=vscode)
-
-Keep in mind that the __*USB debugging*__ of your mobile device must be on, if you are using a physical device. 
-
-Learn how to navigate through the app : [Prototype]
 
 
 
