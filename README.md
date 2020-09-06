@@ -12,7 +12,7 @@ Reference for setting up your IDE can be found [here](https://medium.com/techspa
 
 Keep in mind that the __*USB debugging*__ of your mobile device must be on, if you are using a physical device. 
 
-Learn how to navigate through the app : [Prototype]()
+Learn how to navigate through the app : [Prototype](https://youtu.be/lvTSss3HWvs)
 
 ## Problem Statement
 Colleges, Schools, Tuitions and Coaching centers have been
@@ -55,6 +55,7 @@ __Solution__ : Our app gives students the best study routine : Pomodoro study te
   
 <item> 4. Potent attendance management system specially designed for remote learning.
 
+Here is the [youtube](https://youtu.be/lvTSss3HWvs) video for further information.
 
 
 
